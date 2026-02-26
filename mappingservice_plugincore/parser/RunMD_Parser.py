@@ -1,7 +1,7 @@
 from abc import abstractmethod
 
-from src.model.RunMD import RunMD
-from mappingservice_plugincore.mappingservice_plugincore.parser.MetadataParser import MetadataParser
+from mappingservice_plugincore.model.RunMD import RunMD
+from mappingservice_plugincore.parser.MetadataParser import MetadataParser
 
 
 class RunMD_Parser(MetadataParser):

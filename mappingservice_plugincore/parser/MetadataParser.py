@@ -8,8 +8,6 @@ import logging
 
 import configparser
 
-from src.util import configparser_keep_keystring
-
 
 #from configparser import ConfigParser, NoInterpolation
 
@@ -46,7 +44,7 @@ class MetadataParser(ABC):
             
             self.parsed_data = {}
             config = configparser.ConfigParser(interpolation=configparser.Interpolation()) # disables interpolation explicitly
-            config.optionxform = configparser_keep_keystring # do this if you do not want to read in data as lowercase
+            config.optionxform = lambda x: x # do this if you do not want to read in data as lowercase
             config.read_string(payload)
             for section in config.sections():
                 items = config.items(section)

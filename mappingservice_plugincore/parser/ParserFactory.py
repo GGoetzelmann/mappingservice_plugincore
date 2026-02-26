@@ -1,9 +1,9 @@
 import logging
 from typing import Type
 
-from mappingservice_plugincore.mappingservice_plugincore.parser.ImageParser import ImageParser
-from mappingservice_plugincore.mappingservice_plugincore.parser.RunMD_Parser import RunMD_Parser
-from mappingservice_plugincore.mappingservice_plugincore.parser.SetupMD_Parser import SetupMD_Parser
+from mappingservice_plugincore.parser.ImageParser import ImageParser
+from mappingservice_plugincore.parser.RunMD_Parser import RunMD_Parser
+from mappingservice_plugincore.parser.SetupMD_Parser import SetupMD_Parser
 
 
 class ParserFactory:

@@ -1,7 +1,7 @@
 from abc import abstractmethod
 
 from src.model.SetupMD import SetupMD
-from mappingservice_plugincore.mappingservice_plugincore.parser.MetadataParser import MetadataParser
+from mappingservice_plugincore.parser.MetadataParser import MetadataParser
 
 
 class SetupMD_Parser(MetadataParser):
